@@ -25,6 +25,7 @@ It works with any CSV file. Just point it at your data and start asking question
 
 I kept the code modular — each file has one job and one job only.
 
+```
 cli-data-analysis-tool/
 ├── main.py          ← entry point — parses commands and routes them
 ├── loader.py        ← loads and validates any CSV with error handling
@@ -34,7 +35,7 @@ cli-data-analysis-tool/
 ├── data/            ← put your CSV datasets here
 ├── outputs/         ← all generated charts and exports land here
 └── requirements.txt
-
+```
 If I want to add a new chart type in the future I only touch `plotter.py`.
 Nothing else needs to change. That is why I structured it this way.
 
